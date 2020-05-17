@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorAccent"
+
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:text="food_name"
+                android:layout_width="347dp"
+                android:layout_height="72dp"
+                android:id="@+id/nameView"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintVertical_bias="0.0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimary" android:gravity="center" android:padding="2dp"/>
+        <TextView
+                android:text="food_desc"
+                android:layout_width="315dp"
+                android:layout_height="443dp"
+                android:id="@+id/descView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/nameView"
+                app:layout_constraintVertical_bias="0.56" android:padding="2dp"/>
+        <TextView
+                android:text="food_calories"
+                android:layout_width="144dp"
+                android:layout_height="42dp"
+                android:id="@+id/calorieView"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="1.0" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.516" android:textColor="#140303"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                app:fontFamily="@font/candal" android:gravity="center"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
